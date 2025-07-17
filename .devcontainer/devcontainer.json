@@ -1,5 +1,9 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "ghcr.io/devcontainers-extra/features/n8n:1": {},
-  "features": {}
+  "name": "n8n‑Codespace env",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", // or your preferred base
+  "features": {
+    "ghcr.io/devcontainers-extra/features/n8n:1": {}
+  },
+  // optionally, forward port 5678 for n8n web UI
+  "forwardPorts": [5678]
 }
